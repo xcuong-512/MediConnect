@@ -1,0 +1,202 @@
+.main-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-signup {
+    width: 800px;
+    max-width: 90%;
+    height: 780px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+}
+
+.register-form-column {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .register-form-column {
+        width: 50%;
+        padding: 2.5rem;
+    }
+}
+
+.alert-box-warning {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #991b1b;
+    border-radius: 0.5rem;
+    background-color: #fef2f2;
+    ;
+}
+
+.alert-font-medium {
+    font-weight: 500;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+
+}
+
+.form-title-highlight {
+    color: #007BFF;
+    margin-left: 5px;
+}
+
+.form-subtitle {
+    color: #6b7280;
+
+    margin-top: 0.5rem;
+
+}
+
+.link-login {
+    color: #007BFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-social-google {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    color: #4b5563;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: background-color 150ms ease;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-social-google:hover {
+    background-color: #f9fafb;
+}
+
+.icon-google {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.form-driver {
+    display: flex;
+    align-items: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: #d1d5db;
+}
+
+.divider-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.form-group.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 3rem;
+    border: 1px solid #d1d5db;
+    transition: box-shadow 150ms ease, border-color 150ms ease;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.input-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* nằm chính xác giữa chiều dọc khi ta sử dụng -50% */
+}
+
+.btn-register-submit {
+    width: 100%;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-register-submit:hover {
+    background-color: #2563eb;
+
+}
+
+.register-image-column {
+    display: none;
+    background-color: #eff6ff;
+    /* bg-blue-50 */
+    width: 100%;
+    /* Mặc định w-full, sẽ bị ẩn */
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .register-image-column {
+        display: flex;
+        /* sm:flex */
+    }
+}
+
+@media (min-width: 768px) {
+    .register-image-column {
+        width: 50%;
+        /* md:w-1/2 */
+    }
+}
+
+.image-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
