@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
+    background-color: #dff8f1;
+
 
 }
 
@@ -35,9 +37,15 @@
     padding: 0;
 }
 
+.menu-item {
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+
 .main-nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: 500;
     line-height: 87px;
 }
@@ -54,6 +62,13 @@
     padding: 8px 16px;
     border: none;
     cursor: pointer;
+    background-color: #FFC419;
+    color: white;
 
 
+
+}
+
+.btn:hover {
+    opacity: 0.8;
 }

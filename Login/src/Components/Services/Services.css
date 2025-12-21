@@ -1,0 +1,54 @@
+.main-services {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.services-title {
+    font-family: sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.box-services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 thằng / 1 dòng */
+    gap: 16px;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.card-strong {
+    border-radius: 28px;
+    border: 1px solid #e5e7eb;
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+    gap: 30px;
+}
+
+
+
+.services-img {
+    height: 43px;
+}
+
+.img-se {
+    height: 43.4px;
+}
+
+
+.text-line {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}

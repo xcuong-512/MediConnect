@@ -10,17 +10,18 @@ function NavBar() {
             <div className='main-header'>
 
                 <div className='main-logo'>
-                    <img src="./img/doctor.jpg" alt="drug-logo" className='img-logo' />
+                    {/* <img src="./img/doctor.jpg" alt="drug-logo" className='img-logo' /> */}
+                    <h3>MediConnect</h3>
                 </div>
 
                 <div className='main-nav'>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><a href="/">Service</a></li>
-                        <li><a href="/">Price List</a></li>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/">News</a></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li ><Link className='menu-item' to="/">Home</Link></li>
+                        <li><a className='menu-item' href="/">Services</a></li>
+                        <li className='menu-item'><a href="/">Price List</a></li>
+                        <li className='menu-item'><a href="/">About Us</a></li>
+                        <li className='menu-item'><a href="/">News</a></li>
+                        <li className='menu-item'><Link to="/contact">Contact</Link></li>
 
 
                     </ul>
