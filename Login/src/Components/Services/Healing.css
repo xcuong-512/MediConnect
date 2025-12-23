@@ -1,0 +1,106 @@
+.main-booking {
+    margin-top: 20px;
+
+}
+
+.booking-title {
+    display: flex;
+    width: 75%;
+    margin: 20px auto;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: sans-serif;
+
+}
+
+.booking-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 75%;
+    margin: 30px auto;
+
+}
+
+.booking-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.booking-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+
+}
+
+@media(max-width: 648px) {
+    .booking-card {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.booking-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.booking-text {
+    text-align: center;
+    color: #626262;
+    font-size: 20px;
+}
+
+.spirit-section {
+    padding: 40px 0;
+    background-image: url('https://cdn.bookingcare.vn/fo/w828/2023/11/01/140308-background2.png');
+    background-size: cover;
+    margin-bottom: 88px;
+}
+
+.ask-box {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.ask-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-ask {
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+}
+
+.ask-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px 20px;
+    border-radius: 16px;
+    display: block;
+}
+
+.ask-doctor {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}

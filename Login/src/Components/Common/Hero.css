@@ -69,7 +69,8 @@
 .box {
     border-radius: 8px;
     border: 1px solid black;
-    height: 100px;
+    height: 140px;
+    min-width: 120px;
     display: flex;
     background-color: white;
     padding: 10px;
@@ -78,6 +79,21 @@
     cursor: pointer;
     border: none;
 
+}
+
+@media(max-width: 648px) {
+    .box {
+
+        border-radius: 8px;
+        border: 1px solid black;
+        height: 80px;
+        min-width: 150px;
+        min-height: 80px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        padding: 8px;
+    }
 }
 
 .box:hover {
@@ -93,6 +109,18 @@
 .box-title {
     font-weight: 600;
     font-size: 18px;
+}
+
+@media(max-width: 648px) {
+
+    .box-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .box-text {
+        font-size: 10px;
+    }
 }
 
 .box-text {

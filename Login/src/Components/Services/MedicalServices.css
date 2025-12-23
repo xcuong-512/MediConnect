@@ -1,0 +1,106 @@
+.main-medical {
+    /* display: flex; */
+    margin-top: 20px;
+}
+
+.medical-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.medical-title {
+    font-family: sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.btn-xem-them {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 10px 0;
+    margin-right: 15px;
+    font-weight: 600;
+    color: #34929E;
+}
+
+@media (min-width: 640px) {
+    .btn-xem-them {
+        background-color: #DAF3F6;
+        padding: 10px 6px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .btn-xem-them {
+        background-color: #DAF3F6;
+        padding: 10px 6px;
+        font-size: 1.000rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .btn-xem-them {
+        margin-right: 0;
+        line-height: 1.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn-xem-them {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+.specialty-scroll-wrapper {
+    width: 100%;
+    /* overflow: hidden;  chiếm toàn bộ của thằng bố*/
+    padding: 20px 0;
+    overflow-y: hidden;
+    background-color: transparent;
+}
+
+.specialty-list-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 35px;
+    padding: 20px 20px;
+    padding-left: 88px;
+    padding-right: 88px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+@media(max-width : 648px) {
+    .specialty-list-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.specialty-list-container::-webkit-scrollbar {
+    display: none;
+}

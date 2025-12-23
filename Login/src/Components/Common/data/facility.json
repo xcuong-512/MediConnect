@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Bệnh viện Hữu nghị Việt Đức",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2018/06/18/083122lo-go-viet-duc.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Bệnh viện Lão Khoa",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2018/07/02/175558benh-vien-lao-khoa-lo-go-1.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Bệnh viện STO phương đông",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/05/09/162239-logo-sto.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Phòng khám Bệnh viện Đại học Y Dược 1",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/07/14/155206-logo-y-duoc-1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Bệnh viện Ung bướu Hưng Việt",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2023/05/16/153236-logo-hung-viet.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Phòng khám Đa Khoa Meditec",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2018/05/11/181208mediteclogo.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Hệ Thống phòng khám Vietlife ",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2018/06/18/143606logo-phong-kham-viet-life.png"
+    },
+    {
+        "id": 8,
+        "title": "Hệ thống Y tế Thu Cúc TCI",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2021/04/07/103904-logo-thucuc.png"
+    },
+    {
+        "id": 9,
+        "title": "Bệnh viện Đa khoa An Việt",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2024/07/18/114029-anh1.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Bệnh viện Đa khoa Hồng Phát",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/01/28/165735-logo-hong-phat.png"
+    }
+]
