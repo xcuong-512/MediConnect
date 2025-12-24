@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
     height: 40vh;
+    /* Chỉnh lại background color cho đồng bộ với header và hero section */
     background-color: #3FA34D;
     color: white;
 }
@@ -15,8 +16,6 @@
     flex-direction: column;
     gap: 15px;
     font-weight: 500;
-
-
 }
 
 .thery-icon {
@@ -42,7 +41,6 @@
     flex-shrink: 0;
     background: white;
     border-radius: 50%;
-
 }
 
 .infor p {
@@ -75,6 +73,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    /* Chỉnh lại margin để icon k dính vào bottom */
     margin-top: 8px;
 }
 
