@@ -1,0 +1,39 @@
+.doctor-card {
+    flex: 0 0 264px;
+    text-align: center;
+}
+
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.name {
+    font-size: 18px;
+    color: #113135;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.specialty {
+    color: #626262;
+    font-size: 15px;
+}

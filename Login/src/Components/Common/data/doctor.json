@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Khám Tại Trung Tâm Nội Soi Tiêu Hóa Doctor Check",
+        "dept": "Tiêu hóa",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2024/03/26/180435-kham-tieu-hoa.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Thầy thuốc ưu tú , Tiến sĩ , Bác sĩ Nguyễn Văn Danh",
+        "dept": "Thần kinh",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2025/03/18/142152-bs-doanh.png"
+    },
+    {
+        "id": 3,
+        "title": "Đại tá, Phó giáo sư, Tiến sĩ, Bác sĩ CKII Thầy thuốc nhân dân Nguyễn Văn Quýnh",
+        "dept": "Tim mạch",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2025/03/18/142438-quynh-pgs.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Gói Khám Bác Sĩ Khuyến Cáo (DC2) ",
+        "dept": "Khám tổng quát , Cơ bản , Nam , Nữ",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2024/10/28/093554-01-goi-tieu-chuan.png"
+    },
+    {
+        "id": 5,
+        "title": "Bác sĩ Chuyên khoa II Võ Văn Mẫn",
+        "dept": "Cơ Xương Khớp , Chấn thương chỉnh hình",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2025/08/14/153243-anh-bs-5.png"
+    },
+    {
+        "id": 6,
+        "title": "Bác sĩ Chuyên khoa II Lê Hồng Anh",
+        "dept": "Hô hấp-Phổi",
+        "image": "https://cdn.bookingcare.vn/fo/w384/2025/08/14/152557-anh-bs-2.png"
+    }
+]
