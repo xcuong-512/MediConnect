@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "10X Content là gì? Cách xây dựng Content SEO Y tế theo 10X Content",
+        "category": "SEO Y TẾ",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/13/132939-10x-content-seo-y-te.png"
+    },
+    {
+        "id": 2,
+        "title": "Cách sử dụng Google Keyword Planner để chọn từ khóa bài viết",
+        "category": "MARKETING PHÒNG KHÁM",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/10/175657-cach-su-dung-google-keyword-planner.png"
+    },
+    {
+        "id": 3,
+        "title": "Các Module quan trọng trong thiết kế Website phòng khám",
+        "category": "THIẾT KẾ WEBSITE",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/09/172027-module-thiet-ke-website-phong-kham.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Marketing phòng khám - Phần 1: Chiến lược tập trung vào chất lượng khám chữa bệnh",
+        "category": "PHẦN 1",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/08/134643-marketing-phong-kham-1.png"
+    },
+    {
+        "id": 5,
+        "title": "7 sáng kiến giúp giảm thời gian chờ trong bệnh viện, phòng khám",
+        "banner_text": "Sáng kiến giảm thời gian chờ trong bệnh viện, phòng khám",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/06/172415-sang-kien-giam-thoi-gian-cho-trong-benh-vien.png"
+    },
+    {
+        "id": 6,
+        "title": "Dùng thử BookingCare_DX bản miễn phí, có những tính năng gì?",
+        "banner_text": "Giới thiệu tính năng bản dùng thử miễn phí chuyển đổi số y tế BookingCare_DX",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/11/04/150002-tinh-nang-dung-thu-bookingcare-dx.png"
+    },
+    {
+        "id": 7,
+        "title": "4 Lợi ích Giải pháp Chuyển đổi số Phòng khám BookingCare_DX",
+        "banner_text": "Ưu điểm nổi bật Giải pháp Chuyển đổi số Y tế BookingCare_DX",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/10/13/174911-chuyen-doi-so-bookingcare-dx.png"
+    },
+    {
+        "id": 8,
+        "title": "Lean Startup là gì? Ứng dụng trong Marketing phòng khám",
+        "banner_text": "Lean Startup là gì? Ứng dụng Lean Startup trong Marketing phòng khám",
+        "image": "https://cdn.bookingcare.vn/fo/w640/2022/10/11/120624-lean-startup-marketing-phong-kham.png"
+    }
+]

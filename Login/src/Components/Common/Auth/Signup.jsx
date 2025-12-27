@@ -1,12 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../Layout'
 import './Signup.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 
 function Signup() {
+    const [fullname, setFullname] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [passwordConfirmation, setPasswordConfirmation] = useState("")
+    const [error, setError] = useState("")
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+
+        try {
+            const response = await axios.post("http://localhost:8000/api/register", {
+                full_name: fullname,
+                email: email,
+                phone: "0123456789",
+                password: password,
+                password_confirmation: passwordConfirmation
+
+            }, {
+                withCredentials: true
+
+            });
+            navigate("/signin");
+        } catch (err) {
+            if (err.response && err.response.data) {
+                setError(err.response.data.message || "Đăng ký thất bại");
+            }
+            else {
+                setError("Có lỗi xảy ra");
+            }
+        }
+    };
+
     return (
         <>
             <Layout>
@@ -44,11 +78,11 @@ function Signup() {
                                 <div className="divider-line"></div>
                             </div>
 
-                            <form action="">
+                            <form onSubmit={handleSubmit}>
                                 <div className='form-group'>
                                     <label className="form-label">Họ và tên</label>
                                     <div className='input-icon-wrapper'>
-                                        <input type="text" className='form-input' placeholder='Họ và tên' name='name' id='user-name' />
+                                        <input type="text" className='form-input' placeholder='Họ và tên' name='name' id='user-name' value={fullname} onChange={(e) => setFullname(e.target.value)} />
                                         <FaUser className='input-icon' />
 
                                     </div>
@@ -56,7 +90,7 @@ function Signup() {
                                     <div className='form-group mt-2'>
                                         <label className='form-label'>Email</label>
                                         <div className='input-icon-wrapper'>
-                                            <input type="email" className='form-input' placeholder='Nhập email' name='email' id='email' />
+                                            <input type="email" className='form-input' placeholder='Nhập email' name='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                                             <FaEnvelope className='input-icon' />
 
                                         </div>
@@ -65,7 +99,7 @@ function Signup() {
                                     <div className='form-group mt-2'>
                                         <label className='form-label'>Mật khẩu</label>
                                         <div className='input-icon-wrapper'>
-                                            <input type="password" className='form-input' placeholder='Nhập mật khẩu' name='password' id='password' />
+                                            <input type="password" className='form-input' placeholder='Nhập mật khẩu' name='password' id='password' value={password} onChange={(e) => setPassword(e.target.value)} />
                                             <FaLock className='input-icon' />
 
 
@@ -75,7 +109,7 @@ function Signup() {
                                     <div className='form-group mt-2'>
                                         <label className='form-label'>Xác nhận mật khẩu</label>
                                         <div className='input-icon-wrapper'>
-                                            <input type="password" className='form-input' placeholder='Xác nhận mật khẩu' name='password_confirmation' id='password_confirmation' />
+                                            <input type="password" className='form-input' placeholder='Xác nhận mật khẩu' value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} required />
                                             <FaLock className='input-icon' />
 
 

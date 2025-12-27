@@ -2,8 +2,39 @@ import './SignIn.css'
 import Layout from '../Layout'
 import { FaEnvelope } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from 'react';
 function SignIn() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+
+        try {
+            const response = await axios.post(
+                "http://localhost:8000/api/login",
+                {
+                    email,
+                    password,
+                },
+                {
+                    withCredentials: true
+                }
+            );
+            navigate("/dashboard");
+        } catch (err) {
+            if (err.response && err.response.data) {
+                setError(err.response.data.message || "Đăng nhập thất bại");
+            } else {
+                setError("Có lỗi xảy ra");
+            }
+        }
+    };
+
     return (
         <>
 
@@ -11,7 +42,7 @@ function SignIn() {
                 <div className='main-signin'>
                     <div className='card-signin'>
 
-                        <div className='form-signin'>
+                        <form className='form-signin' onSubmit={handleSubmit}>
 
 
                             <p className='start-login'>BẮT ĐẦU KHÁM CHỮA BỆNH</p>
@@ -25,7 +56,7 @@ function SignIn() {
                                 <Link to='/signup' className='link-login'>Đăng nhập</Link>
                             </p>
 
-                            <a href="https://www.benhvien108.vn/home.htm" className="btn-social-google">
+                            <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google">
                                 <img
                                     src="https://www.google.com/favicon.ico"
                                     alt="Google Logo"
@@ -33,7 +64,8 @@ function SignIn() {
                                     width="20"
                                     height="20"
                                 />
-                                <span className="font-medium">Đăng ký với Google</span>
+                                <span className="font-medium">Đăng Ký với Google</span>
+
                             </a>
 
                             <div class="divider-container">
@@ -45,7 +77,7 @@ function SignIn() {
                             <div className='form-email'>
                                 <label className='form-label' >Email</label>
                                 <div className='child-email'>
-                                    <input className='form-input' type="email" name='email' placeholder='Nhập email' />
+                                    <input className='form-input' type="email" name='email' placeholder='Nhập email' value={email} onChange={(e) => setEmail(e.target.value)} required />
                                     <FaEnvelope className='input-icon' />
                                 </div>
                             </div>
@@ -53,15 +85,18 @@ function SignIn() {
                             <div className='form-email'>
                                 <label className='form-label' >Mật khẩu</label>
                                 <div className='child-email'>
-                                    <input className='form-input' type="password" name='password' placeholder='Nhập mật khẩu' />
+                                    <input className='form-input' type="password" name='password' placeholder='Nhập mật khẩu' value={password} onChange={(e) => setPassword(e.target.value)} required />
                                     <FaLock className='input-icon' />
                                 </div>
                             </div>
 
-                        </div>
-                        <button type="submit" class="btn-register-submit">
-                            <span>Đăng Nhập</span>
-                        </button>
+
+                            <button type="submit" class="btn-register-submit">
+                                <span>Đăng Nhập</span>
+                            </button>
+
+                        </form>
+
 
                     </div>
                 </div>

@@ -24,6 +24,7 @@
     align-items: flex-start;
     gap: 16px;
     max-width: 420px;
+
 }
 
 .sevices p,
@@ -31,6 +32,7 @@
     font-size: 14px;
     line-height: 1.6;
     color: white;
+    cursor: pointer;
 }
 
 .doctor-icon {
@@ -50,6 +52,11 @@
     font-size: 14px;
     line-height: 1.6;
     color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Chỉnh lại margin để icon k dính vào bottom */
+    margin-top: 8px;
 }
 
 .sevices a {

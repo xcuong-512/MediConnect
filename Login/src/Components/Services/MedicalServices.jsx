@@ -8,6 +8,8 @@ import Doctor from './Doctor';
 import DoctorRemote from './DoctorRemote';
 import Healing from './Healing';
 import Handbook from './Handbook';
+import Social from '../SocialMedia/Social';
+import Ideal from './Ideal';
 function MedicalServices() {
 
     return (
@@ -57,6 +59,8 @@ function MedicalServices() {
             <DoctorRemote />
             <Healing />
             <Handbook />
+            <Social />
+            <Ideal />
 
         </>
     )

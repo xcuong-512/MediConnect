@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Healthy.css"
+import strong from "../Common/data/HealStrong.json";
+import HealthyChild from './HealthyChild';
 function Healthy() {
     return (
         <>
@@ -9,6 +11,14 @@ function Healthy() {
                     <a href="/" className="btn-xem-them">
                         <span>Xem thêm</span>
                     </a>
+                </div>
+
+                <div className='specialty-scroll-wrapper'>
+                    <div className='specialty-list-container'>
+                        {strong.map((s, index) => (
+                            <HealthyChild key={s.id || index} stronger={s} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </>

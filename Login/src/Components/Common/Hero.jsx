@@ -30,7 +30,7 @@ function Hero() {
 
                     <div className='box'>
                         <div className='boxer-image'>
-                            <img src="https://www.svgrepo.com/show/216267/girl.svg" alt="" className='box-img' />
+                            <img src="https://cdn.bookingcare.vn/fo/w828/2025/09/09/142548-phauthuatthammy.png" alt="" className='box-img' />
                         </div>
 
                         <div className='box-span'>
