@@ -7,10 +7,11 @@ function Footer() {
             <div className="footer-container">
                 <div className='thery-icon'>
                     <img className='doctor-icon' src="../../../public/img/Bachmai.png" alt="" />
-
+                    {/* Add thêm email và phải có mailto để khi ấn vào có thể gửi mail luôn cho trung tâm */}
                     <div className="infor">
                         <p>Địa chỉ: 78 Đường Giải Phóng, Phường Kim Liên, Thành phố Hà Nội</p>
                         <p>Tổng đài: 198765000</p>
+                        {/* Bọc số điện thoại bằng thẻ a và thêm thuộc tính tel để có thể chuyển qua tab gọi điện */}
                         <p>Hotline: 096.985.1616</p>
 
                     </div>
@@ -24,6 +25,7 @@ function Footer() {
                     <a href=""> <p>Tra cứu kết quả xét nghiệm</p></a>
                 </div>
 
+                {/* Phần này thiếu cursor:pointer */}
                 <div className="footer-menu">
                     <p>Về Bạch Mai</p>
                     <p>Đơn vị chuyên khoa</p>
