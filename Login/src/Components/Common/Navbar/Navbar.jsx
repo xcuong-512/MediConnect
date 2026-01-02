@@ -18,8 +18,8 @@ function NavBar() {
                     <ul>
                         <li ><Link className='menu-item' to="/">Home</Link></li>
                         <li><a className='menu-item' href="/">Services</a></li>
-                        <li className='menu-item'><a href="/">Price List</a></li>
-                        <li className='menu-item'><a href="/">About Us</a></li>
+                        <li className='menu-item'><a href="/">Medical package</a></li>
+                        <li className='menu-item'><Link to="/aboutus">About Us</Link></li>
                         <li className='menu-item'><a href="/">News</a></li>
                         <li className='menu-item'><Link to="/contact">Contact</Link></li>
 

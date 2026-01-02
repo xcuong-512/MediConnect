@@ -7,9 +7,9 @@ function Healthy() {
         <>
             <div className='main-healthy'>
                 <div className='medical-title'>
-                    <h4 className='high-4'>Sống khỏe suốt đời</h4>
+                    <h4 className='high-4'>Lifelong Wellness</h4>
                     <a href="/" className="btn-xem-them">
-                        <span>Xem thêm</span>
+                        <span>View more</span>
                     </a>
                 </div>
 

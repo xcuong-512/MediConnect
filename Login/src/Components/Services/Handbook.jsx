@@ -8,9 +8,10 @@ function Handbook() {
         <>
             <div className='main-handbook'>
                 <div className='medical-title'>
-                    <h4 className='high-4'>Cẩm nang</h4>
+                    <h4 className='high-4'>
+                        Handbook</h4>
                     <a href="/" className="btn-xem-them">
-                        <span>Xem thêm</span>
+                        <span>View More</span>
                     </a>
                 </div>
                 <div className='specialty-scroll-wrapper'>

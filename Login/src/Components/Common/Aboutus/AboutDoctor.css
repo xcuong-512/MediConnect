@@ -1,0 +1,84 @@
+.about_doctor {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://cdn.bookingcare.vn/fo/2023/11/01/140311-background5.png');
+}
+
+.main-about_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.some-high {
+    margin-bottom: 20px;
+    color: #45c3d2;
+    text-align: center;
+}
+
+.doctor-card {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image-holder {
+    width: 120px;
+    height: 120px;
+    margin: 25px auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #45c3d2;
+    /* Màu thương hiệu */
+}
+
+.image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-info h3 {
+    font-size: 17px;
+    color: #333;
+    margin: 0 10px 8px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.specialty {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cột trên điện thoại */
+        gap: 15px;
+    }
+
+    .image-holder {
+        width: 80px;
+        height: 80px;
+    }
+
+    .doctor-info h3 {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,230 @@
+.infor_main {
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slider-doctor {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #fff; */
+    padding: 15px;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-left: 180px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.doctor_container {
+    padding-right: 15px;
+    text-align: center;
+}
+
+.doctor-slider {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor_information {
+    flex: 1;
+}
+
+.user_doctor {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0 5px 0;
+    line-height: 1.2;
+}
+
+.doctor-summary {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.doctor-location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.share-button-container {
+    margin-top: 15px;
+}
+
+.share-button {
+    display: inline-block;
+    background-color: #1877f2;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .doctor-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .doctor-name {
+        font-size: 27px;
+    }
+}
+
+
+.booking-container {
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+.booking-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+/* --- Cột Lịch Khám --- */
+.schedule-section {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    width: fit-content;
+    padding: 3px 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.current-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.time-item {
+    background-color: #eeeeee;
+    padding: 10px;
+    min-width: 115px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    transition: box-shadow 0.2s;
+}
+
+.time-item:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: #f7d54d;
+    /* Màu highlight khi hover của BookingCare */
+}
+
+.booking-note {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #333;
+    padding-top: 10px;
+}
+
+/* --- Cột Thông tin địa chỉ/giá --- */
+.info-section {
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.address-block .label,
+.price-block .label,
+.insurance-block .label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.clinic-name {
+    color: #45c3d2;
+    /* Màu primary đặc trưng */
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.address-detail {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.price-block,
+.insurance-block {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: normal;
+    color: #333;
+    margin: 0 8px;
+}
+
+.detail-link {
+    color: #45c3d2;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* --- Responsive Desktop --- */
+@media (min-width: 768px) {
+    .booking-wrapper {
+        flex-direction: row;
+    }
+
+    .schedule-section {
+        width: 55%;
+        padding-right: 15px;
+    }
+
+    .info-section {
+        width: 45%;
+        border-top: none;
+        border-left: 1px solid #eee;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+}

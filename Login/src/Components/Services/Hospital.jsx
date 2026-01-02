@@ -7,7 +7,7 @@ function Hospital({ hospital }) {
                 <div className='image-box'>
                     <img className='medical-image' src={hospital.image} alt={hospital.title} />
                 </div>
-                <h3>{hospital.title}</h3>
+                <h4>{hospital.title}</h4>
 
             </a>
         </div>

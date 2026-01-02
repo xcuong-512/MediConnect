@@ -47,7 +47,7 @@ function SignIn() {
 
                             <p className='start-login'>BẮT ĐẦU KHÁM CHỮA BỆNH</p>
                             <h2 className='text-two'>
-                                Đăng nhập vào <span className='text-prep'>Doctor.</span>
+                                Đăng nhập vào <span className='text-prep'>Doctor.cdn</span>
                             </h2>
 
                             <p className='form-subtitle'>
@@ -55,47 +55,51 @@ function SignIn() {
                                 <Link to='/signup' className='link-login'>Đăng ký</Link>
                             </p>
 
+                            {/* <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google" /> */}
                             <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google">
-                                <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google">
-                                    <img
-                                        src="https://www.google.com/favicon.ico"
-                                        alt="Google Logo"
-                                        className="icon-google-img"
-                                        width="20"
-                                        height="20"
-                                    />
-                                    <span className="font-medium">Đăng Ký với Google</span>
+                                <img
+                                    src="https://www.google.com/favicon.ico"
+                                    alt="Google Logo"
+                                    className="icon-google-img"
+                                    width="20"
+                                    height="20"
+                                />
+                                <span className="font-medium">Đăng Ký với Google</span>
 
-                                </a>
+                            </a>
 
-                                <div className="divider-container">
-                                    <div className="divider-line"></div>
-                                    <span className="divider-text">Hoặc</span>
-                                    <div className="divider-line"></div>
+
+
+                            <div className="divider-container">
+                                <div className="divider-line"></div>
+                                <span className="divider-text">Hoặc</span>
+                                <div className="divider-line"></div>
+                            </div>
+
+                            {error && <div className="error-message">{error}</div>}
+
+                            <div className='form-email'>
+                                <label className='form-label'>Email</label>
+                                <div className='child-email'>
+                                    <input className='form-input' type="email" name='email' placeholder='Nhập email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                                    <FaEnvelope className='input-icon' />
                                 </div>
+                            </div>
 
-                                {error && <div className="error-message">{error}</div>}
-
-                                <div className='form-email'>
-                                    <label className='form-label'>Email</label>
-                                    <div className='child-email'>
-                                        <input className='form-input' type="email" name='email' placeholder='Nhập email' value={email} onChange={(e) => setEmail(e.target.value)} required />
-                                        <FaEnvelope className='input-icon' />
-                                    </div>
+                            <div className='form-email'>
+                                <label className='form-label'>Mật khẩu</label>
+                                <div className='child-email'>
+                                    <input className='form-input' type="password" name='password' placeholder='Nhập mật khẩu' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                                    <FaLock className='input-icon' />
                                 </div>
-
-                                <div className='form-email'>
-                                    <label className='form-label'>Mật khẩu</label>
-                                    <div className='child-email'>
-                                        <input className='form-input' type="password" name='password' placeholder='Nhập mật khẩu' value={password} onChange={(e) => setPassword(e.target.value)} required />
-                                        <FaLock className='input-icon' />
-                                    </div>
-                                </div>
+                            </div>
 
 
-                                <button type="submit" class="btn-register-submit">
-                                    <span>Đăng Nhập</span>
-                                </button>
+                            <button type="submit" class="btn-register-submit">
+                                <span>Đăng Nhập</span>
+                            </button>
+
+
 
                         </form>
 

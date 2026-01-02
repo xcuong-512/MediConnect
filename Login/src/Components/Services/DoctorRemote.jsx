@@ -7,9 +7,9 @@ function DoctorRemote() {
         <>
             <div className='doctor-remote'>
                 <div className='medical-title'>
-                    <h4 className='high-4'>Khám từ xa</h4>
+                    <h4 className='high-4'>Telehealth</h4>
                     <a href="/" className="btn-xem-them">
-                        <span>Xem thêm</span>
+                        <span>View more</span>
                     </a>
                 </div>
                 <div className='specialty-scroll-wrapper'>

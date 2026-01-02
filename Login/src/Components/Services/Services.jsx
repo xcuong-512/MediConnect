@@ -5,7 +5,7 @@ function Services() {
         <>
             <div className='main-services'>
                 <div className='services-title'>
-                    Dịch vụ toàn diện
+                    Comprehensive Service
                 </div>
                 <div className='box-services-container'>
                     <div className='card-strong'>
@@ -13,7 +13,7 @@ function Services() {
                             <img className='box-img' src="https://cdn.bookingcare.vn/fo/w128/2023/06/07/161905-iconkham-chuyen-khoa.png" alt="" />
                         </div>
                         <div className='services-text'>
-                            <p className='text-line'>Khám chuyên khoa</p>
+                            <p className='text-line'>Specialist Examination</p>
                         </div>
                     </div>
 
@@ -24,7 +24,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Khám  từ xa</p>
+                            <p className='text-line'>Telemedicine</p>
                         </div>
 
                     </div>
@@ -36,7 +36,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Khám tổng quát</p>
+                            <p className='text-line'>General Check-up</p>
                         </div>
 
                     </div>
@@ -48,7 +48,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Xét nghiệm y học</p>
+                            <p className='text-line'>Medical Testing</p>
                         </div>
 
                     </div>
@@ -60,7 +60,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Sức khỏe tinh thần</p>
+                            <p className='text-line'>Mental Health </p>
                         </div>
 
                     </div>
@@ -73,7 +73,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Khám nha khoa</p>
+                            <p className='text-line'>Dental Check-up</p>
                         </div>
 
                     </div>
@@ -86,7 +86,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Gói phẫu thuật</p>
+                            <p className='text-line'>Surgery Package</p>
                         </div>
 
                     </div>
@@ -99,7 +99,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Sống khỏe Tiểu đường</p>
+                            <p className='text-line'>Living Well with Diabetes</p>
                         </div>
 
                     </div>
@@ -112,7 +112,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Bài test sức khỏe</p>
+                            <p className='text-line'>Health Test</p>
                         </div>
 
                     </div>
@@ -125,7 +125,7 @@ function Services() {
                         </div>
 
                         <div className='services-text'>
-                            <p className='text-line'>Y tế gần nhất</p>
+                            <p className='text-line'>Nearest Medical Facilities</p>
                         </div>
 
                     </div>

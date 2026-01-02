@@ -1,0 +1,394 @@
+.about-block {
+    position: relative;
+    padding: 60px 20px;
+    /* Chèn ảnh nền */
+    background-image: url('https://bookingcare.vn/assets/anh/bookingcare_bg_mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Đảm bảo ảnh phủ kín khung hình */
+
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    margin-bottom: 35px;
+}
+
+#about_logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.content-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.content-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-text h1 {
+    color: #45c3d2;
+    /* Màu thương hiệu BookingCare */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content-text h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.content-text p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+.link-wrapper {
+    margin-top: 20px;
+}
+
+.btn-visit {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffc419;
+    /* Màu vàng nổi bật */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-visit:hover {
+    background-color: #e6b017;
+}
+
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    .content-text {
+        text-align: center;
+    }
+}
+
+.about-text {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.vung-bao {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: #2ac5d2;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.hang {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.cot-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.about-problem-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.about-problem-item:hover {
+    transform: translateY(-5px);
+}
+
+.about-problem-item .icon {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .cot-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.bookingcare-about {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://cdn.bookingcare.vn/fo/2023/11/01/140311-background5.png');
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.video-main {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-main iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.content-column h2 {
+    color: #45c3d2;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.ai-tag {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0f9fa;
+    border-left: 4px solid #45c3d2;
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .content-column h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+.bookingcare-benefits {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.bookingcare-benefits .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bookingcare-benefits h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    text-align: left;
+}
+
+.comparison-table thead {
+    background-color: #45c3d2;
+    color: #fff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #f0f9fa;
+    transition: 0.3s;
+}
+
+.criteria-label {
+    font-weight: bold;
+    color: #555;
+    width: 20%;
+}
+
+@media (max-width: 600px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .criteria-label {
+        width: auto;
+    }
+}
+
+.main-hard {
+    margin-top: 10px;
+}
+
+.someone-text {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+    /* xanh y tế */
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.someone-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(180deg, #14b8a6, #0d9488);
+    border-radius: 4px;
+}
+
+.continue-text {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.difficulty-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f766e;
+    margin-bottom: 12px;
+}
+
+.difficulty-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .difficulty-grid {
+        grid-template-columns: 1fr;
+    }
+}

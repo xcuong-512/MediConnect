@@ -6,14 +6,14 @@ function Hero() {
         <>
             <div className='main-hero'>
                 <div className='hero-title'>
-                    Nền tảng đặt lịch khám bệnh , chăm sóc răng miệng làm đẹp
+                    Platform for Medical Appointments, Dental Care & Beauty Services
                 </div>
                 <div className='search-container'>
-                    <input type="text" placeholder='Nhập tên bác sĩ' className='search-bar' />
+                    <input type="text" placeholder='Search Doctors by Specialty ' className='search-bar' />
                     <FaSearch className='search-icon' />
                 </div>
                 <div className='ai-title'>
-                    Sản phẩm hỗ trợ bởi AI
+                    Service Support Products
                 </div>
 
                 <div className='ai-support-container'>
@@ -23,8 +23,8 @@ function Hero() {
                         </div>
 
                         <div className='box-span'>
-                            <p className='box-title'>Trợ lý Ai đặt lịch</p>
-                            <p className='box-text'>Tìm kiếm thông tin bác sĩ, nơi khám và đặt lịch khám</p>
+                            <p className='box-title'>Booking Support</p>
+                            <p className='box-text'>Find doctors, medical facilities, and book appointments.</p>
                         </div>
                     </div>
 
@@ -34,8 +34,8 @@ function Hero() {
                         </div>
 
                         <div className='box-span'>
-                            <p className='box-title'>Trợ lý thẩm mỹ</p>
-                            <p className='box-text'>Tìm kiếm địa chỉ, bác sĩ thẩm mỹ uy tín.</p>
+                            <p className='box-title'>Aesthetic Support</p>
+                            <p className='box-text'>Find reputable clinics and top-rated plastic surgeons.</p>
                         </div>
                     </div>
                     <div className='box'>
@@ -44,8 +44,8 @@ function Hero() {
                         </div>
 
                         <div className='box-span'>
-                            <p className='box-title'>Trợ lý niềng răng</p>
-                            <p className='box-text'>Tìm kiếm địa chỉ, bác sĩ niềng răng giàu kinh nghiệm.</p>
+                            <p className='box-title'>Orthodontic Support</p>
+                            <p className='box-text'>Find reputable clinics and experienced orthodontists.</p>
                         </div>
                     </div>
                     <div className='box'>
@@ -54,8 +54,8 @@ function Hero() {
                         </div>
 
                         <div className='box-span'>
-                            <p className='box-title'>Trợ lý trị mụn</p>
-                            <p className='box-text'>Tìm bác sĩ, dịch vụ, cơ sở chuyên về điều trị mụn.</p>
+                            <p className='box-title'>Acne Treatment Support</p>
+                            <p className='box-text'>Find doctors, services, and facilities specializing in acne care..</p>
                         </div>
                     </div>
                     <div className='box'>
@@ -65,7 +65,7 @@ function Hero() {
 
                         <div className='box-span'>
                             <p className='box-title'>Dental Trip</p>
-                            <p className='box-text'>Nền tảng nha khoa du lịch dành riêng cho người nước ngoài.</p>
+                            <p className='box-text'>Dental Tourism Platform Exclusively for Foreigners.</p>
                         </div>
                     </div>
                     <div className='box'>
@@ -74,8 +74,8 @@ function Hero() {
                         </div>
 
                         <div className='box-span'>
-                            <p className='box-title'>Trợ lý chuẩn đoán</p>
-                            <p className='box-text'>Chuẩn đoán dấu hiệu của bệnh nhân</p>
+                            <p className='box-title'>Diagnostic Support</p>
+                            <p className='box-text'>Diagnosing patient signs and symptoms</p>
                         </div>
                     </div>
                 </div>

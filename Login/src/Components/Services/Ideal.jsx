@@ -7,9 +7,9 @@ function Ideal() {
             <div className='main-ideal'>
                 <div className='main-handbook'>
                     <div className='medical-title'>
-                        <h4 className='high-4'>Dành cho bác sĩ và cơ sở y tế</h4>
+                        <h4 className='high-4'>For Doctors and Medical Facilities</h4>
                         <a href="/" className="btn-xem-them">
-                            <span>Bài viết</span>
+                            <span>Articles</span>
                         </a>
                     </div>
                 </div>

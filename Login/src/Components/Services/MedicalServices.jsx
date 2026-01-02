@@ -18,9 +18,9 @@ function MedicalServices() {
 
 
                 <div className='medical-title'>
-                    <h4 className='high-4'>Chuyên khoa</h4>
+                    <h4 className='high-4'>Medical Specialties</h4>
                     <a href="/" class="btn-xem-them">
-                        <span>Xem thêm</span>
+                        <span>View more</span>
                     </a>
                 </div>
 
@@ -37,9 +37,9 @@ function MedicalServices() {
 
             <div className='main-medical'>
                 <div className='medical-title'>
-                    <h4 className='high-4'>Cơ sở y tế</h4>
+                    <h4 className='high-4'>Healthcare Facilities</h4>
                     <a href="/" class="btn-xem-them">
-                        <span>Xem thêm</span>
+                        <span>View More</span>
                     </a>
                 </div>
 

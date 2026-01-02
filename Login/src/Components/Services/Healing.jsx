@@ -7,7 +7,7 @@ function Healing() {
         <>
             <div className='main-booking'>
                 <div className='booking-title'>
-                    <h4 className='high-4'> Gợi ý của BookingCare  </h4>
+                    <h4 className='high-4'>Recommended by BookingCare  </h4>
                 </div>
 
                 <div className='booking-container'>
@@ -15,14 +15,14 @@ function Healing() {
                         <div className='booking-card'>
                             <img className='booking-image' src="https://cdn.bookingcare.vn/fo/w640/2024/01/12/144801-3.png" alt="" />
                         </div>
-                        <p className='booking-text'>Được quan tâm</p>
+                        <p className='booking-text'>Top Interest</p>
                     </a>
 
                     <a href="" className='booking-link'>
                         <div className='booking-card'>
                             <img className='booking-image' src="https://cdn.bookingcare.vn/fo/w640/2024/01/12/144801-4.png" alt="" />
                         </div>
-                        <p className='booking-text'>Y tế nổi bật</p>
+                        <p className='booking-text'>Featured Healthcare</p>
                     </a>
                 </div>
             </div>
@@ -30,7 +30,7 @@ function Healing() {
             <section className='spirit-section'>
                 <div className='spirit-main'>
                     <div className='booking-title'>
-                        <h4 className='high-4'> Sức khỏe tinh thần  </h4>
+                        <h4 className='high-4'>Mental Health  </h4>
                     </div>
 
                     <div className='specialty-scroll-wrapper'>
@@ -47,13 +47,13 @@ function Healing() {
 
             <div className='main-booking'>
                 <div className='booking-title'>
-                    <h4 className='high-4'> Bác sĩ hỏi đáp </h4>
+                    <h4 className='high-4'> Ask a Doctor </h4>
                 </div>
                 <div className='ask-box'>
                     <a href="" className='ask-link'>
                         <div className='card-ask'>
                             <img className='ask-image' src="https://cdn.bookingcare.vn/fo/w640/2023/11/01/141028-hoidapcongdong.jpeg" alt="" />
-                            <p className='ask-doctor'>Hỏi bác sĩ miễn phí</p>
+                            <p className='ask-doctor'>Ask a Doctor for Free:</p>
                         </div>
 
 
@@ -63,7 +63,7 @@ function Healing() {
                         <div className='card-ask'>
                             <img className='ask-image' src="https://cdn.bookingcare.vn/fo/w640/2024/04/23/150322-z5375466237591689132201a679526eaab9274b8cd39a9.jpg" alt="" />
 
-                            <p className='ask-doctor'>Cẩm nang hỏi đáp</p>
+                            <p className='ask-doctor'>Q&A Guide</p>
 
                         </div>
 

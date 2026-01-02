@@ -6,10 +6,10 @@ function ChildDoctor({ doctor }) {
             <div className='doctor-card'>
                 <a href="/" className='doctor-link'>
                     <div className='image-wrapper'>
-                        <img src={doctor.image} alt={doctor.title} />
+                        <img src={doctor.image} alt={doctor.position} />
                     </div>
-                    <h3 class="name">{doctor.dept}</h3>
-                    <p class="specialty">{doctor.title}</p>
+                    <h3 class="name"> {doctor.position} {doctor.name} </h3>
+                    <p class="specialty">{doctor.specialty}</p>
                 </a>
             </div>
         </>

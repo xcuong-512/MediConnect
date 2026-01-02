@@ -6,6 +6,11 @@ import Home from './page/Home'
 import ConnectContact from './page/ConnectContact'
 import ConnectSignUp from './page/ConnectSignUp'
 import ConnectLogin from './page/ConnectLogin'
+import Aboutus from './Components/Common/Aboutus/Aboutus'
+import ConnectAbout from './page/ConnectAbout'
+import ConnectDoctorDetail from './page/ConnectDoctorDetail'
+import ConnectDoctorInfor from './page/ConnectDoctorInfor'
+
 function App() {
 
 
@@ -17,8 +22,12 @@ function App() {
           <Route path='contact' element={<ConnectContact />}></Route>
           <Route path='signup' element={<ConnectSignUp />}></Route>
           <Route path='signin' element={<ConnectLogin />}></Route>
+          <Route path='aboutus' element={<ConnectAbout />}></Route>
+          <Route path='detail' element={<ConnectDoctorDetail />}></Route>
+          <Route path="infor/:id" element={<ConnectDoctorInfor />}></Route>
         </Routes>
       </BrowserRouter>
+
     </>
   )
 }
