@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import Layout from '../Layout'
 import './Signup.css'
@@ -6,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import axios from "axios";
 
 function Signup() {
     const [fullname, setFullname] = useState("")
@@ -19,25 +19,35 @@ function Signup() {
         e.preventDefault();
         setError("");
 
+        if (password !== passwordConfirmation) {
+            setError("Mật khẩu xác nhận không khớp");
+            return;
+        }
+
         try {
-            const response = await axios.post("http://localhost:8000/api/register", {
-                full_name: fullname,
-                email: email,
-                phone: "0123456789",
-                password: password,
-                password_confirmation: passwordConfirmation
-
-            }, {
-                withCredentials: true
-
-            });
+            await axios.post(
+                "http://127.0.0.1:8000/api/register",
+                {
+                    full_name: fullname,
+                    email: email,
+                    password: password,
+                    phone: "0123456789",
+                    password_confirmation: passwordConfirmation,
+                },
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                }
+            );
+            alert("Đăng ký thành công");
             navigate("/signin");
         } catch (err) {
             if (err.response && err.response.data) {
                 setError(err.response.data.message || "Đăng ký thất bại");
-            }
-            else {
-                setError("Có lỗi xảy ra");
+            } else {
+                setError("Không thể kết nối server");
             }
         }
     };
