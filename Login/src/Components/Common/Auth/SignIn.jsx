@@ -4,6 +4,8 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
+import axios from "axios";
+
 function SignIn() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -22,9 +24,15 @@ function SignIn() {
                     password,
                 },
                 {
-                    withCredentials: true
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
                 }
             );
+            localStorage.setItem("token", response.data.token);
+            localStorage.setItem("roles", JSON.stringify(response.data.roles));
+            localStorage.setItem("account", JSON.stringify(response.data.account));
             navigate("/dashboard");
         } catch (err) {
             if (err.response && err.response.data) {
