@@ -10,7 +10,7 @@ import Aboutus from './Components/Common/Aboutus/Aboutus'
 import ConnectAbout from './page/ConnectAbout'
 import ConnectDoctorDetail from './page/ConnectDoctorDetail'
 import ConnectDoctorInfor from './page/ConnectDoctorInfor'
-
+import Search from './Components/Common/Search/Search'
 function App() {
 
 
@@ -24,7 +24,8 @@ function App() {
           <Route path='signin' element={<ConnectLogin />}></Route>
           <Route path='aboutus' element={<ConnectAbout />}></Route>
           <Route path='detail' element={<ConnectDoctorDetail />}></Route>
-          <Route path="infor/:id" element={<ConnectDoctorInfor />}></Route>
+          <Route path="detail/:id" element={<ConnectDoctorInfor />}></Route>
+          <Route path='search' element={<Search />}></Route>
         </Routes>
       </BrowserRouter>
 

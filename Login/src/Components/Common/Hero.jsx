@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Hero.css'
 import { FaSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 function Hero() {
+    const navigate = useNavigate();
+    const [keyword, setKeyword] = useState('');
+    const handleSearch = () => {
+        navigate(`/search?specialty=${keyword}`);
+    };
+
+
     return (
         <>
             <div className='main-hero'>
@@ -9,8 +19,8 @@ function Hero() {
                     Platform for Medical Appointments, Dental Care & Beauty Services
                 </div>
                 <div className='search-container'>
-                    <input type="text" placeholder='Search Doctors by Specialty ' className='search-bar' />
-                    <FaSearch className='search-icon' />
+                    <input type="text" placeholder='Search Doctors by Specialty ' className='search-bar' value={keyword} onChange={(e) => setKeyword(e.target.value)} />
+                    <FaSearch onClick={handleSearch} className='search-icon' />
                 </div>
                 <div className='ai-title'>
                     Service Support Products

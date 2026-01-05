@@ -32,7 +32,7 @@ function DoctorDetail() {
 
             <div className='doctor-list-container'>
                 {data.map((items, index) => (
-                    <Link to={`/infor/${items.id}`} className='detail-card'>
+                    <Link to={`/detail/${items.id}`} className='detail-card'>
                         <div className="doctor-avatar">
                             <img src={items.image}
                                 alt={items.position}
