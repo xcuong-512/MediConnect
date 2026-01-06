@@ -5,7 +5,7 @@ function Social() {
         <>
             <div className='main-social'>
                 <section className='spirit-section'>
-                    <h1 className='social-h1'>What the Media Says About BookingCare</h1>
+                    <h1 className='social-h1'>What the Media Says About MediConnect</h1>
 
                     <div className='media-container'>
                         <div className='video-wrapper'>

@@ -6,6 +6,7 @@
     /* Chỉnh lại background color cho đồng bộ với header và hero section */
     background-color: rgba(73, 188, 226, 0.6);
     color: white;
+    font-size: 28px;
 }
 
 
@@ -63,6 +64,11 @@
     color: white;
 }
 
+.sevices a:hover p,
+.footer-menu p:hover {
+    color: #000;
+}
+
 .last-footer {
     background-color: rgba(73, 188, 226, 0.6);
     color: white;
@@ -80,9 +86,12 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    /* Chỉnh lại margin để icon k dính vào bottom */
+    /* font-size: 18px; */
     margin-top: 8px;
+}
 
+.social-icon a {
+    font-size: 28px;
 }
 
 .iconer {

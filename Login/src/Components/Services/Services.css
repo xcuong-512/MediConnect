@@ -36,6 +36,7 @@
     border: 1px solid #e5e7eb;
     height: 100px;
     display: flex;
+    align-items: center;
     cursor: pointer;
     padding: 10px;
     background-color: white;
@@ -43,11 +44,14 @@
     gap: 30px;
 }
 
-
-
-.services-img {
-    height: 43px;
+.box-img {
+    display: inline-block;
+    margin: auto 0;
 }
+
+/* .services-img {
+    height: 43px;
+} */
 
 .img-se {
     height: 43.4px;
@@ -55,7 +59,6 @@
 
 
 .text-line {
-    margin-top: 20px;
     font-weight: 600;
     font-size: 18px;
 }

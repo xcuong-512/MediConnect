@@ -11,7 +11,7 @@ function Footer() {
                     <div className="infor">
                         <p>Address: 78 Giai Phong Street, Kim Lien Ward, Hanoi City</p>
                         <p>Hotline: 198765000</p>
-                        <p><a style={{ textDecoration: "none", color: "white" }} href="mailto:support@bookingcare.vn">Email Us</a></p>
+                        <p>Email Us:<a style={{ textDecoration: "none", color: "white" }} href="mailto:support@mediconnect.vn"> support@mediconnect.vn</a></p>
                         {/* Bọc số điện thoại bằng thẻ a và thêm thuộc tính tel để có thể chuyển qua tab gọi điện */}
                         <p><a style={{ textDecoration: "none", color: "white" }} href='tel:098765432'>Mobile Number: 098765432</a></p>
 

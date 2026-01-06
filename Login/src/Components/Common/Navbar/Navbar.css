@@ -39,14 +39,17 @@
 
 .menu-item {
     font-size: 18px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
+}
 
+.menu-item:hover {
+    text-decoration: underline;
 }
 
 .main-nav ul li a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 87px;
 }
 
@@ -59,14 +62,12 @@
 
 .btn {
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     background-color: #FFC419;
     color: white;
-
-
-
+    font-weight: bold;
 }
 
 .btn:hover {

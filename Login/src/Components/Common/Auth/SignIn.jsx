@@ -55,12 +55,12 @@ function SignIn() {
 
                             <p className='start-login'>BẮT ĐẦU KHÁM CHỮA BỆNH</p>
                             <h2 className='text-two'>
-                                Đăng nhập vào <span className='text-prep'>Doctor.cdn</span>
+                                Login <span className='text-prep'>MediConnect.app</span>
                             </h2>
 
                             <p className='form-subtitle'>
                                 Bạn đã đăng ký chưa?
-                                <Link to='/signup' className='link-login'>Đăng ký</Link>
+                                <Link to='/signup' className='link-login'>REGISTER</Link>
                             </p>
 
                             {/* <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google" /> */}
@@ -72,7 +72,7 @@ function SignIn() {
                                     width="20"
                                     height="20"
                                 />
-                                <span className="font-medium">Đăng Ký với Google</span>
+                                <span className="font-medium">Sign-up với Google</span>
 
                             </a>
 
@@ -80,7 +80,7 @@ function SignIn() {
 
                             <div className="divider-container">
                                 <div className="divider-line"></div>
-                                <span className="divider-text">Hoặc</span>
+                                <span className="divider-text">Or</span>
                                 <div className="divider-line"></div>
                             </div>
 
@@ -95,16 +95,16 @@ function SignIn() {
                             </div>
 
                             <div className='form-email'>
-                                <label className='form-label'>Mật khẩu</label>
+                                <label className='form-label'>Password</label>
                                 <div className='child-email'>
-                                    <input className='form-input' type="password" name='password' placeholder='Nhập mật khẩu' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                                    <input className='form-input' type="password" name='password' placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
                                     <FaLock className='input-icon' />
                                 </div>
                             </div>
 
 
                             <button type="submit" class="btn-register-submit">
-                                <span>Đăng Nhập</span>
+                                <span>Login</span>
                             </button>
 
 

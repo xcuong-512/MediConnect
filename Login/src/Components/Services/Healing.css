@@ -1,6 +1,5 @@
 .main-booking {
     margin-top: 20px;
-
 }
 
 .booking-title {
@@ -19,9 +18,8 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    width: 75%;
-    margin: 30px auto;
-
+    width: 100%;
+    justify-content: space-around;
 }
 
 .booking-link {
@@ -85,20 +83,19 @@
     margin: 0 auto 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-
 }
 
 .ask-image {
     width: 400px;
     height: 300px;
     object-fit: cover;
-    padding: 20px 20px;
-    border-radius: 16px;
+    /* padding: 20px 20px 0 20px; */
+    border-radius: 16px 16px 0px 0px;
     display: block;
 }
 
 .ask-doctor {
-    padding: 16px;
+    margin: 20px 0;
     font-size: 18px;
     font-weight: 600;
     text-align: center;

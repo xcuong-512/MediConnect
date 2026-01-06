@@ -30,7 +30,7 @@ function Healing() {
             <section className='spirit-section'>
                 <div className='spirit-main'>
                     <div className='booking-title'>
-                        <h4 className='high-4'>Mental Health  </h4>
+                        <h4 className='high-4'>Mental Health </h4>
                     </div>
 
                     <div className='specialty-scroll-wrapper'>
@@ -45,7 +45,7 @@ function Healing() {
                 </div>
             </section>
 
-            <div className='main-booking'>
+            <div className='ask-doctor'>
                 <div className='booking-title'>
                     <h4 className='high-4'> Ask a Doctor </h4>
                 </div>
@@ -53,7 +53,7 @@ function Healing() {
                     <a href="" className='ask-link'>
                         <div className='card-ask'>
                             <img className='ask-image' src="https://cdn.bookingcare.vn/fo/w640/2023/11/01/141028-hoidapcongdong.jpeg" alt="" />
-                            <p className='ask-doctor'>Ask a Doctor for Free:</p>
+                            <p className='ask-doctor'>Ask a Doctor for Free</p>
                         </div>
 
 
