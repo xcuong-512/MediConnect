@@ -1,0 +1,161 @@
+.Profile_main {
+    margin-top: 20px;
+
+
+
+}
+
+.profile_pain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dady-profile {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.icon-profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+
+}
+
+.container-pro {
+    max-width: 600px;
+    display: flex;
+    gap: 20px
+}
+
+.inputner {
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-emailner {
+    display: flex;
+    align-items: center;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    gap: 10px;
+    padding: 0 20px;
+
+}
+
+.form_email-container {
+
+
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+
+
+}
+
+.email-intext {
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 4px;
+
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-number_phone {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    gap: 20px;
+    padding: 0 20px;
+
+}
+
+.form_phone-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.phone-intext {
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 4px;
+
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.select-custom {
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit-profile {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.submit_save {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: #0EA5E9;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border: none;
+
+}
+
+.submit_save:hover {
+    opacity: 0.8;
+
+}

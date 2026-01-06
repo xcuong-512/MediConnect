@@ -61,7 +61,7 @@ function Healing() {
 
                     <a href="" className='ask-link'>
                         <div className='card-ask'>
-                            <img className='ask-image' src="https://cdn.bookingcare.vn/fo/w640/2024/04/23/150322-z5375466237591689132201a679526eaab9274b8cd39a9.jpg" alt="" />
+                            <img style={{ borderRadius: '16px' }} className='ask-image' src="https://cdn.bookingcare.vn/fo/w640/2024/04/23/150322-z5375466237591689132201a679526eaab9274b8cd39a9.jpg" alt="" />
 
                             <p className='ask-doctor'>Q&A Guide</p>
 
