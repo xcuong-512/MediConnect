@@ -42,7 +42,6 @@ function MedicalServices() {
                         <span>View More</span>
                     </a>
                 </div>
-
                 <div className='specialty-scroll-wrapper'>
                     <div className='specialty-list-container'>
                         {special.map((s, index) => (

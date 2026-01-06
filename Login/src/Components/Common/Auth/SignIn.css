@@ -2,79 +2,197 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 80vh;
+    background-color: #f3f4f6;
+    padding: 20px;
 }
 
 .card-signin {
-    width: 550px;
     background-color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    /* Fix lại margin cho form không dính lên header */
-    margin-bottom: 50px;
-    margin-top: 50px;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
-.form-signin {
+
+.start-login {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+.text-two {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.text-prep {
+    color: #2563eb;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.link-login {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+.link-login:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.btn-social-google {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.5rem;
-    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: white;
+    color: #374151;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 24px;
+}
+
+.btn-social-google:hover {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.icon-google-img {
+    margin-right: 10px;
 }
 
 .divider-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 .divider-line {
-    flex: 1;
+    flex-grow: 1;
     height: 1px;
-    background-color: #d1d5db;
+    background-color: #e5e7eb;
 }
 
 .divider-text {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: #6b7280;
-    font-size: 0.875rem;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #9ca3af;
 }
 
 .form-email {
-    margin-top: 0.75rem;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.link-login {
-    margin-right: 2px;
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
 }
 
 .child-email {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.start-login {
-    font-weight: 500;
-    margin-top: 2.5rem;
-
+.form-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    font-size: 15px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.text-two {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 10px;
-    margin-bottom: 0.25rem;
-
+.form-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    background-color: #fff;
 }
 
-.text-prep {
-    color: rgb(59, 130, 246);
-    margin-left: 5px;
 
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: #9ca3af;
+    font-size: 16px;
+    pointer-events: none;
 }
+
 
 .btn-register-submit {
-    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.btn-register-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-register-submit:active {
+    transform: scale(0.98);
+}
+
+
+.error-message {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+    text-align: center;
+}
+
+
+@media (max-width: 640px) {
+    .card-signin {
+        padding: 25px;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .main-signin {
+        background-color: white;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
 }

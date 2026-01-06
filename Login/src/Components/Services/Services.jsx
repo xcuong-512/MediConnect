@@ -84,13 +84,10 @@ function Services() {
                             <img className='box-img' src="https://cdn.bookingcare.vn/fo/w128/2023/06/07/161421-icongoi-phau-thuat.png" alt="" />
 
                         </div>
-
                         <div className='services-text'>
                             <p className='text-line'>Surgery Package</p>
                         </div>
-
                     </div>
-
 
                     <div className='card-strong'>
                         <div className='services-img'>
@@ -104,19 +101,15 @@ function Services() {
 
                     </div>
 
-
                     <div className='card-strong'>
                         <div className='services-img'>
                             <img className='box-img' src="https://cdn.bookingcare.vn/fo/w128/2023/06/07/161442-iconbai-test-suc-khoe2.png" alt="" />
 
                         </div>
-
                         <div className='services-text'>
                             <p className='text-line'>Health Test</p>
                         </div>
-
                     </div>
-
 
                     <div className='card-strong'>
                         <div className='services-img'>
@@ -129,10 +122,6 @@ function Services() {
                         </div>
 
                     </div>
-
-
-
-
                 </div>
             </div>
         </>

@@ -1,10 +1,9 @@
-import './SignIn.css'
-import Layout from '../Layout'
-import { FaEnvelope } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
+import './SignIn.css';
+import Layout from '../Layout';
+import { FaEnvelope, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import axios from "axios";
+import api from '../../../services/api';
 
 function SignIn() {
     const [email, setEmail] = useState("");
@@ -17,42 +16,36 @@ function SignIn() {
         setError("");
 
         try {
-            const response = await axios.post(
-                "http://localhost:8000/api/login",
-                {
-                    email,
-                    password,
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                        Accept: "application/json",
-                    },
-                }
-            );
-            localStorage.setItem("token", response.data.token);
-            localStorage.setItem("roles", JSON.stringify(response.data.roles));
-            localStorage.setItem("account", JSON.stringify(response.data.account));
-            navigate("/dashboard");
+            const response = await api.post("/login", {
+                email,
+                password,
+            });
+
+            const token = response.data.token;
+            const user = response.data.user;
+            localStorage.setItem("token", token);
+            if (user) {
+                localStorage.setItem("user", JSON.stringify(user));
+            }
+
+            alert("Đăng nhập thành công!");
+            navigate("/");
         } catch (err) {
+            console.error("Login Error:", err);
             if (err.response && err.response.data) {
-                setError(err.response.data.message || "Đăng nhập thất bại");
+                setError(err.response.data.message || "Đăng nhập thất bại. Vui lòng kiểm tra lại.");
             } else {
-                setError("Có lỗi xảy ra");
+                setError("Có lỗi xảy ra, không thể kết nối đến server.");
             }
         }
     };
 
     return (
         <>
-
             <Layout>
                 <div className='main-signin'>
                     <div className='card-signin'>
-
                         <form className='form-signin' onSubmit={handleSubmit}>
-
-
                             <p className='start-login'>BẮT ĐẦU KHÁM CHỮA BỆNH</p>
                             <h2 className='text-two'>
                                 Login <span className='text-prep'>MediConnect.app</span>
@@ -63,8 +56,7 @@ function SignIn() {
                                 <Link to='/signup' className='link-login'>REGISTER</Link>
                             </p>
 
-                            {/* <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google" /> */}
-                            <a href="http://localhost:8000/auth/google/redirect" className="btn-social-google">
+                            <a href="http://127.0.0.1:8000/auth/google/redirect" className="btn-social-google">
                                 <img
                                     src="https://www.google.com/favicon.ico"
                                     alt="Google Logo"
@@ -73,10 +65,7 @@ function SignIn() {
                                     height="20"
                                 />
                                 <span className="font-medium">Sign-up với Google</span>
-
                             </a>
-
-
 
                             <div className="divider-container">
                                 <div className="divider-line"></div>
@@ -84,12 +73,20 @@ function SignIn() {
                                 <div className="divider-line"></div>
                             </div>
 
-                            {error && <div className="error-message">{error}</div>}
+                            {error && <div className="error-message" style={{ color: 'red', textAlign: 'center', marginBottom: '10px' }}>{error}</div>}
 
                             <div className='form-email'>
                                 <label className='form-label'>Email</label>
                                 <div className='child-email'>
-                                    <input className='form-input' type="email" name='email' placeholder='Nhập email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                                    <input
+                                        className='form-input'
+                                        type="email"
+                                        name='email'
+                                        placeholder='Nhập email'
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        required
+                                    />
                                     <FaEnvelope className='input-icon' />
                                 </div>
                             </div>
@@ -97,26 +94,28 @@ function SignIn() {
                             <div className='form-email'>
                                 <label className='form-label'>Password</label>
                                 <div className='child-email'>
-                                    <input className='form-input' type="password" name='password' placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                                    <input
+                                        className='form-input'
+                                        type="password"
+                                        name='password'
+                                        placeholder='Enter Password'
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
+                                        required
+                                    />
                                     <FaLock className='input-icon' />
                                 </div>
                             </div>
 
-
-                            <button type="submit" class="btn-register-submit">
+                            <button type="submit" className="btn-register-submit">
                                 <span>Login</span>
                             </button>
-
-
-
                         </form>
-
-
                     </div>
                 </div>
             </Layout>
-
         </>
     )
 }
+
 export default SignIn;

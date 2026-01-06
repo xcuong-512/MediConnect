@@ -3,7 +3,9 @@ import Layout from '../Components/Common/Layout'
 import SignIn from '../Components/Common/Auth/SignIn'
 function ConnectLogin() {
     return (
-        <SignIn />
+        <Layout>
+            <SignIn />
+        </Layout>
     )
 }
 

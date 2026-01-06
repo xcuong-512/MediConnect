@@ -1,0 +1,99 @@
+.featured-doctors-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+
+.doctors-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding: 10px 5px 30px 5px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.doctors-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.doctors-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 4px;
+}
+
+.doctor-card {
+    min-width: 260px;
+    max-width: 260px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-img-wrapper {
+    width: 100%;
+    height: 240px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.doctor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-img {
+    transform: scale(1.05);
+}
+
+.doctor-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.doctor-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.doctor-specialty {
+    font-size: 0.9rem;
+    color: #3b82f6;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.book-btn:hover {
+    background-color: #1d4ed8;
+}
