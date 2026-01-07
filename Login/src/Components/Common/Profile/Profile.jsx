@@ -1,112 +1,107 @@
 import React, { useState } from 'react'
 import "./Profile.css"
+import Layout from '../Layout'
 function Profile() {
-    const [firtname, setFirtName] = useState('Mehrab');
-    const [lastname, setLastName] = useState('Lubabu');
-    const [address, setAddress] = useState('33062 Chicago America');
-    const [isEditing, setIsEditing] = useState(false);
-    const handleSubmit = (e) => {
-        e.preventDefault();
 
-
-
-
-    }
     return (
-        <>
-            <div className='Profile_main'>
+        <Layout>
 
-                <div className='profile_pain'>
-                    <div className='dady-profile'>
-                        <img className='icon-profile' src="https://cdn2.fptshop.com.vn/small/avatar_trang_1_cd729c335b.jpg" alt="" />
-                    </div>
-                </div>
-
-
-                <div className="form-container">
-
-                    <div className="form-item">
-                        <label htmlFor="FirstName">First Name</label>
-                        <input className='inputner' type="text" id="FirstName" name="FirstName" value={firtname} disabled={!isEditing} onChange={(e) => setFirtName(e.target.value)} />
+            <div className='main-grid'>
+                <div className='user_sidebar'>
+                    <div className='avatar_container'>
+                        <img className='avartar' src="https://cdn2.fptshop.com.vn/small/avatar_trang_1_cd729c335b.jpg" alt="" />
                     </div>
 
+                    <div className='container-infor'>
+                        <h2 className='username'>@java4866367570</h2>
 
-                    <div className="form-item">
-                        <label htmlFor="LastName">Last Name</label>
-                        <input className='inputner' type="text" id="LastName" name="LastName" value={lastname} disabled={!isEditing} onChange={(e) => setLastName(e.target.value)} />
+                        <button className='user-button'>Edit profile</button>
+                        <p>Joined Jan 7, 2026</p>
                     </div>
-
-                </div>
-
-
-
-
-
-                <div className='form-emailner'>
-
-                    <div className='form_email-container'>
-                        <label htmlFor="Email">Email</label>
-                        <input className='email-intext' type="text" id="Email" name="Email" value="Labubu@gmail.com" readOnly />
-                    </div>
-
 
 
                 </div>
+                <div className='user_information'>
+                    <div className='infor_patient'>
+                        <div className='image_container'>
+                            <img className='nice_avartar' src="https://cdn2.fptshop.com.vn/small/avatar_trang_1_cd729c335b.jpg" alt="" />
+                        </div>
 
-                <div className='form-number_phone'>
+                        <div className='submit_form'>
+                            <div className='name-container'>
+                                <div className='submit_firstname'>
+                                    <label htmlFor="FirstName">FirtName</label> <br></br>
+                                    <input className='submit_name' type="text" name='FirstName' value={'Metharad'} />
+                                </div>
+                                <div className="submit_lastname">
+                                    <label htmlFor="LastName">LastName</label> <br></br>
+                                    <input className='submit_name' type="text" name='LastName' value={'Lukachim '} />
+                                </div>
+                            </div>
 
-                    <div className='form_phone-container'>
-                        <label htmlFor="PhoneNumber">Contact Number</label>
-                        <input className='phone-intext' type="text" id="PhoneNumber" name="PhoneNumber" value="0967854321" readOnly />
+                            <div className='contact'>
+                                <div className='submit_email'>
+                                    <label htmlFor="Email">Email</label> <br></br>
+                                    <input className='email_address' type="email" name='Email' value={'Quaivat@gmail.com'} />
+                                </div>
+
+                                <div className='submit_email'>
+                                    <label htmlFor="Address">Address</label> <br></br>
+                                    <input className='email_address' type="text" name='Address' value={'112 Hoang Quoc Viet'} />
+                                </div>
+
+
+                                <div className='submit_email'>
+                                    <label htmlFor="Number">Contact Number</label> <br></br>
+                                    <input className='email_address' type="text" name='Number' value={'09876544335'} />
+                                </div>
+
+
+
+                                <div className='name-container'>
+                                    <div className='submit_firstname'>
+                                        <label htmlFor="FirstName">City</label> <br></br>
+                                        <input className='submit_name' type="text" name='FirstName' value={'Hanoi'} />
+                                    </div>
+                                    <div className="submit_lastname">
+                                        <label htmlFor="LastName">District</label> <br></br>
+                                        <input className='submit_name' type="text" name='LastName' value={'HoanKiem'} />
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div className='button-container'>
+                                <button type="reset" className='btn reset'>Reset</button>
+                                <button type="submit" className='btn save'>Save</button>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
                     </div>
+                    <div className='medical-history'>
 
-                </div>
-
-
-
-                <div className='form-number_phone'>
-
-                    <div className='form_phone-container'>
-                        <label htmlFor="PhoneNumber">Address</label>
-                        <input className='phone-intext' type="text" id="Address" name="Address" value={address} disabled={!isEditing} onChange={(e) => setAddress(e.target.value)} />
                     </div>
-
                 </div>
-
-
-                <div className="form-container">
-
-                    <div className="form-item">
-                        <label htmlFor="FirstName">City</label>
-                        <select className='select-custom' id="City" name="City">
-                            <option value="america">Hanoi</option>
-                            <option value="vietnam">HOChiMinh</option>
-                            <option value="japan">DaNang</option>
-                            <option value="korea">QuangNinh</option>
-                        </select>
-                    </div>
-
-
-                    <div className="form-item">
-                        <label htmlFor="LastName">State</label>
-                        <select className='select-custom' id="State" name="State">
-                            <option value="america">MienBac</option>
-                            <option value="vietnam">MienTrung</option>
-                            <option value="japan">MienNam</option>
-                            <option value="korea">QuangNinh</option>
-                        </select>
-                    </div>
-
-                </div>
-
-                <div className='submit-profile'>
-                    <button onClick={handleSubmit} className='submit_save'>Save</button>
-                </div>
-
-
-
             </div>
-        </>
+
+
+        </Layout >
     )
 }
 
