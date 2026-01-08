@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import "./Profile.css"
 import Layout from '../Layout'
+import Avatar from '../Avatar'
 function Profile() {
 
     return (
-        <Layout>
+        <Avatar>
 
             <div className='main-grid'>
                 <div className='user_sidebar'>
@@ -101,7 +102,7 @@ function Profile() {
             </div>
 
 
-        </Layout >
+        </Avatar >
     )
 }
 
