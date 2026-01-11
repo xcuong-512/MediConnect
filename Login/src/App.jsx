@@ -13,6 +13,7 @@ import ConnectDoctorInfor from './page/ConnectDoctorInfor'
 import Search from './Components/Common/Search/Search'
 import ConnectDashBoard from './page/ConnectDashBoard'
 import Profile from './Components/Common/Profile/Profile'
+import ConnectSelect from './page/ConnectSelect'
 function App() {
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='search' element={<Search />}></Route>
           <Route path='dashboard' element={<ConnectDashBoard />}></Route>
           <Route path='profile' element={<Profile />}></Route>
+          <Route path="select/:id" element={<ConnectSelect />}></Route>
         </Routes>
       </BrowserRouter>
 
